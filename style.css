@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:100%;
+    min-height:100%;
+    background: url("./assets/backgroundd.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 55px;
+    scale:5;
+    background:linear-gradient(270deg, #3f5efb,#fc466b);
+    animation: ledrgb 4s linear infinite;  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    border:2px solid black ;
+    background: linear-gradient( 90deg, #2e87ec 0%, #2febc2 100%);
+    box-shadow: 10px 3px 4px;
+    width: 400px;
+    max-width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    align-self: center;  
+    border-radius: 18px 26px 17px 27px ; 
+}
+.header{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(0, 0,0, 0.2);
+    padding: 20px;
+    width: 100%;
+}
+
+.form{
+    padding: 20px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.form-control label{
+     margin-bottom: 5px;
+     display: inline-block;
+     font-size: 16pt;
+     font-weight: bold;
+     color:white ;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    font-size: 14pt;
+    padding: 10px;
+    border-radius: 10px;
+    width:100%;
+    box-shadow: 0 4px rgba(0, 0,0, 0.3);
+}
+button{
+    
+    width: 150px;
+    height: 50px;
+    background:linear-gradient(270deg, #3f5efb,#fc466b);
+    color: white;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    animation: ledrgb 4s linear infinite; 
+}
+.colorido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(0, 0, 0);
+    margin-left: 120px;
+    width: 110px;
+    border-radius: 11px;
+    animation: ledrgb 4s linear infinite; 
+
+}
+@keyframes ledrgb{
+    100%{
+        filter: hue-rotate(360deg)
+    }
+}
+.form-control.sucess input{
+    border: 3px solid;
+    border-color: green;
+
+}.form-control.error input{
+    border: 3px solid;
+    border-color: #F00;
+}
+.form-control.error small{
+    visibility: hidden;
+    color: #e74c3c;
+}
+   
